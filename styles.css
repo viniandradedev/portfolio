@@ -1,0 +1,414 @@
+#mobile {
+  display: none;
+}
+
+#mobile-logo {
+  display: none;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 80px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#topdiv {
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.04);
+    width: 100%;
+    margin-top: 80px;
+}
+
+#imagediv {
+    max-width: 60%;
+    height: 400px;
+    float: left;
+    width: fit-content;
+}
+
+/*texts session at the center top*/
+#textdiv {
+    height: 400px;
+    float: left;
+    text-align: left;
+    width: fit-content;
+    overflow-x: hidden;
+    min-width: 400px;
+}
+
+#textdiv h3 {
+    margin-top: 30px;
+}
+
+.container {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.container:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.2);
+    transform-origin: left;
+}
+
+.social-icons {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+  }
+
+  .social-icons a {
+    display: block;
+    margin: 30px 0;
+    margin-top: 50px;
+  }
+
+  .social-icons img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #303030;
+    padding: 10px;
+  }
+
+  .social-icons img:hover {
+     background-color: #016689;
+     cursor: pointer;
+  }
+
+  nav .logo img {
+    margin-top: 15px;
+    max-width: 100%;
+    max-height: 60%;
+    margin-left: 50px;
+    float: left;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+  }
+
+  nav .logo img:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
+    transform-origin: left;
+  }
+
+  nav .idioma img {
+    margin-top: 28px;
+    max-width: 100%;
+    max-height: 60%;
+    margin-right: 50px;
+    float: right;
+    height: 35px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  nav .idioma img:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.3);
+  }
+
+  #textdiv2 {
+    width: 1000px;
+  }
+
+  #textdiv2 p {
+    margin-left: 90px;
+    margin-top: 50px;
+    text-align: justify;
+  }
+
+  #imagediv img {
+    height: 400px;
+  }
+
+  #alert {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 5px 20px;
+    padding-top: 10px;
+    background-color: #016689;
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    font-weight: 450;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+
+  #alert p {
+    color: white;
+  }
+
+  #alert.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    visibility: hidden;
+  }
+
+  /*last darkest div*/
+  #end {
+    height: 120px;
+    float: bottom;
+    background-color: #f1f1f1;
+    z-index: -5;
+    width: 100%;
+  }
+
+  #bottomdiv {
+    padding-bottom: 30px;
+  }
+
+  #end img {
+    height: 20px;
+    color: #454545;
+    margin-top: 30px;
+    float: left;
+    margin-left: 90px;
+  }
+
+  #end p {
+    margin-top: 27px;
+    float: left;
+    margin-left: 10px;
+    font-weight: 500;
+    color: #404040;
+  }
+
+  #end p:hover {
+    color: #016689;
+    cursor: pointer;
+  }
+
+  #splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1.0s ease-out;
+    pointer-events: none;
+}
+
+#splash-screen.hide {
+    opacity: 0;
+}
+
+/*responsive*/
+
+@media (max-width: 1000px) {
+
+
+#topdiv {
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.04);
+    width: 100%;
+    margin-top: 20px;
+}
+
+#imagediv {
+    width: 100%;
+    height: 400px;
+    float: none;
+    display: none;
+}
+
+/*texts session at the center top*/
+#textdiv {
+    height: 400px;
+    width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+}
+.social-icons {
+  position: fixed;
+  top: 85%;
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 20px;
+}
+
+.social-icons img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #303030;
+  padding: 10px;
+}
+
+.social-icons img:hover {
+   background-color: #016689;
+   cursor: pointer;
+}
+
+.container {
+    transition: none;
+    transform-origin: none;
+}
+
+.container:hover {
+    transition: none;
+    transform: none;
+    transform-origin: none;
+}
+
+  nav .logo img {
+    margin-left: 30px;
+    float: left;
+  }
+
+  nav .logo img:hover {
+    transform: none;
+  }
+
+  nav .idioma img {
+    margin-top: 28px;
+    margin-right: 50px;
+    height: 35px;
+  }
+
+  nav .idioma img:hover {
+    transform: none;
+  }
+
+  #textdiv2 {
+    width: 100%;
+  }
+
+  #textdiv2 p {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    text-align: justify;
+  }
+
+  #imagediv img {
+    display: none;
+    width: 0%;
+  }
+
+  #alert {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  /*last darkest div*/
+  #end {
+    height: 140px;
+  }
+
+  #bottomdiv {
+    padding-bottom: 30px;
+  }
+
+  #end p {
+    margin-top: 27px;
+    float: left;
+    margin-left: 10px;
+    font-weight: 500;
+    color: #404040;
+  }
+
+  #end p:hover {
+    color: #016689;
+    cursor: pointer;
+  }
+  #mobile {
+    display: initial;
+    max-width: 100%;
+    height: auto;
+  }
+  #mobile img {
+    height: auto;
+    max-width: 100%
+  }
+}
+
+@media (max-width: 620px) {
+  #logo {
+    display: none;
+  }
+    .social-icons {
+      position: fixed;
+      top: 87%;
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0 auto;
+      white-space: nowrap;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .social-icons img {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #303030;
+      padding: 10px;
+    }
+    #textdiv {
+      height: auto;
+      min-width: 0px;
+    }
+    #mobile-logo {
+      display: initial;
+    }
+
+    nav .idioma img {
+      margin-top: 28px;
+      max-width: 100%;
+      max-height: 60%;
+      margin-right: 30px;
+      float: right;
+      height: 35px;
+      transition: transform 0.5s ease-in-out;
+    }
+    #end img {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    #end p {
+      margin-top: 17px;
+    }
+}
