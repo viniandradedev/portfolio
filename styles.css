@@ -246,6 +246,7 @@ nav {
     width: 100%;
     overflow-x: hidden;
     text-align: center;
+    margin-bottom: 50px;
 }
 .social-icons {
   position: fixed;
